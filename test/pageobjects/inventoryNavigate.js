@@ -92,6 +92,7 @@ class InventoryNavigate extends DefaultPage {
 
     async navToBackToItems () {
         await this.BackToItemsNav.click();
+        await expect(browser).toHaveUrl('https://www.saucedemo.com/inventory.html');
     }
 }
 
